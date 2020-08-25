@@ -2,7 +2,7 @@
 
 ## Tips:
 
-- Talkd out loud
+- Talk out loud
 - When stuck, backpedal
 - Have fun!
 
