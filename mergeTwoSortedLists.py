@@ -19,25 +19,33 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        # create a new linked list that will hold the merging
-        l3 = ListNode()
-        #Loop through n-1 elements (zero index) or recurse
-        #create a temp node 
-        temp = None
-        #Check if lists are empty and return the other one
+        #Check if list are not empty
         if l1 is None:
             return l2
         if l2 is None:
             return l1
-        #check if data in l1 is smaller or equal to l2 dta
+        #copy lists
+        list1 = l1
+        prev = None
+        list2 = l2
+        while list1 and list2:
+            if list1.val <= list2.val:
+                prev = list1
+                list1 = list1.next
+            else:
+                if prev:
+                    prev.next = list2
+                prev = list2
+                list2 = list2.next
+                prev.next = list1
+        if not list1:
+            prev.next = list2
         if l1.val <= l2.val:
-            #Assign temp to l1 value
-            temp = l1.val
-            #check again if l1 value is smaller
-            temp.next = self.mergeTwoLists(l1.next,l2)
+            return l1
         else:
-            #if list 2 value is greater than l1 value, assigned value to temp
-            temp.l2
-            #check again if data is greater or equal than l1 and recurse
-            temp.next = self.mergeTwoLists(l1, l2.next)
-        return temp
+            return l2
+l1 = [1,2,4]
+l2 = [1,3,4]
+l = Solution()
+
+print(l.mergeTwoLists(l1,l2))
