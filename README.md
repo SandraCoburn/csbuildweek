@@ -1,3 +1,30 @@
+
+# Leet Coding Challenges
+
+## 7 - Reverse Integer
+
+Given a 32-bit signed integer, reverse digits of an integer.
+Example 1:
+
+---
+
+Input: 123
+Output: 321
+Example 2:
+
+---
+
+Input: -123
+Output: -321
+Example 3:
+
+---
+
+Input: 120
+Output: 21
+
+---
+=======
 # Coding Challenges
 
 ## Tips:
@@ -29,8 +56,8 @@
   - Think in big concepts
 - Execute
   - If you are describing your existing code:
-    - Interviewer will look for where the concepts match the blocks of code
-    - Point out interesting things in it
+   - Interviewer will look for where the concepts match the blocks of code
+   - Point out interesting things in it
 - Reflect
   - What could we have done better?
   - Future directions and features
