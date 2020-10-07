@@ -11,14 +11,29 @@ Input: [3,1,3,4,2]
 Output: 3
 '''
 def findDuplicate(nums):
+    dupl = []
+    for ind, num in enumerate(nums):
+        if num not in dupl:
+            dupl.append(num)
+        else:
+            return num
+    # duplicate = {}
+    # for num in nums:
+    #     if num in duplicate:
+    #         print("duplicates", duplicate)
+    #         return duplicate[num]
+    #     else: 
+    #         duplicate[num] = num
+
+
+
+
+
+
+
+
         
-    duplicate = {}
-    for num in nums:
-        if num in duplicate:
-            print("duplicates", duplicate)
-            return duplicate[num]
-        else: 
-            duplicate[num] = num
+  
 dup = [1,3,4,5,2,2]
 dup2 = [3,1,3,4,2]
 print(findDuplicate(dup))
