@@ -48,4 +48,4 @@ def reverse(x):
 
 n = 123456
 n2 = -123
-print(reverse(n))
+print(reverse(n2))

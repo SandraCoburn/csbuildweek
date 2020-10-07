@@ -35,7 +35,7 @@ def twoSum(nums, target):
         else:
            cache[val] = i
 
-nums = [2,7,11,15]
+nums = [3, 5, 2, -4, 8, 11] 
 nums2 = [3,2,4]
 target = 9
-print(twoSum(nums,9))
+print(twoSum(nums,7))
